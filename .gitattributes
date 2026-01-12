@@ -1,0 +1,18 @@
+# Ensure Windows batch files always use CRLF
+*.bat text eol=crlf
+
+# Ensure shell scripts always use LF
+*.sh text eol=lf
+
+# Python files use LF
+*.py text eol=lf
+
+# Markdown and text files use LF
+*.md text eol=lf
+*.txt text eol=lf
+
+# CSV files (preserve line endings as-is from EQ Bank)
+*.csv text
+
+# QBO files are text but preserve as-is
+*.qbo text
