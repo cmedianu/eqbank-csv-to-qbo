@@ -8,4 +8,5 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-uv run eqbankcsv2qbo.py "$1"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+uv run "$SCRIPT_DIR/eqbankcsv2qbo.py" "$1"

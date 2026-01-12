@@ -8,4 +8,4 @@ if "%~1"=="" (
     exit /b 1
 )
 
-uv run eqbankcsv2qbo.py "%~1"
+uv run "%~dp0eqbankcsv2qbo.py" "%~1"
